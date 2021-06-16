@@ -1,0 +1,15 @@
+dim:
+- 100
+- 300
+loss:
+- ns
+- hs
+lr:
+- 0.05
+- 0.1
+minCount:
+- 1
+model:
+- cbow
+- skipgram
+

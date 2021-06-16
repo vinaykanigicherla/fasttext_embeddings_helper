@@ -1,0 +1,10 @@
+# Folders
+.vscode/
+__pycache__/
+.ipynb_checkpoints/
+data_test/
+fastText/
+hyp/
+
+# Dev Files
+test.ipynb
