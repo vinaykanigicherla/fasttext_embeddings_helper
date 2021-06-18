@@ -9,10 +9,9 @@ Additionally, we can create either a 2D or 3D PCA visualization of the word vect
 (such as a word similarity dataset), we can also create low dimensional visualizations of these pairs based on the vectors learned by the model.   
 
 ## Setup 
-1. Clone this repository and enter the directory
+1. Clone this repository 
 ```
 $ git clone https://github.com/vinaykanigicherla/fasttext_embeddings_helper.git
-$ cd fasttext_embeddings_helper
 ```
 2. Install FastText Python Module
 ```
