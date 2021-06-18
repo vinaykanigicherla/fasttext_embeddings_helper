@@ -29,7 +29,7 @@ $ pip install -r requirements.txt
 ### Hyperparameter Tuning
 Hyperparameters are tuned using a grid search, where the best combination of values is selected based on the MRR and Recall@10 metrics the model achieves on 
 the provided analogies dataset. The training file provided must be a data file which is an appropriate input to a FastText model. The analogies file 
-provided must be a CSV file have four columns. Assuming these columns respectively are A, B, C, and D, each row must be an example of the analogy A:B = C:D. Trained models and their respective prediction files are saved to their own folders. All runs are logged to `logs.txt`, hyperparameters that yield the best MRR are saved to `best_hyperparameters_mrr.yaml`, and hyperparameters that yield the best Recall@10 are saved to `best_hyperparameters_recall.yaml`, 
+provided must be a CSV file have four columns. Assuming these columns respectively are A, B, C, and D, each row must be an example of the analogy A:B = C:D. Trained models and their respective prediction files are saved to their own folders within the hyperparameter tuning save folder. All runs are logged to `logs.txt`, hyperparameters that yield the best MRR are saved to `best_hyperparameters_mrr.yaml`, and hyperparameters that yield the best Recall@10 are saved to `best_hyperparameters_recall.yaml`, 
 
 To tune hyperparameters, providing path to training data file and analogies data file is required:
 ```
@@ -52,7 +52,7 @@ model:
 - cbow
 - skipgram
 ```
-To use custom hyperparameter search space, set the `search_space_path` flag to the path of your custom YAML file. To change the name of the save folder set the `save_folder` flag to the desired name:
+To use custom hyperparameter search space, set the `search_space_path` flag to the path of your custom YAML file. To change the name of the save folder from the default (`hyp/`) set the `save_folder` flag to the desired name:
 ```
 $ python tune_hyperparameters.py --data_path data/train.txt --analogies_path data/analogies.csv --search_space_path data/custom_hyp_ss.yaml --save_folder tuning_results
 ```
