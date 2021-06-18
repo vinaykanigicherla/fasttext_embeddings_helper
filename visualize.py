@@ -7,8 +7,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Hyperparameter Tuning for Fasttext Unsupervised Learning")
     parser.add_argument("--pairs_path", help="Path to item pairs CSV file", type=str, 
                         default=None)
-    parser.add_argument("--save_folder", help="Folder to which to save hyperparameter tuning results", type=str, 
-                        default="ft_vis")
     parser.add_argument("--is_3d", help="Option to create 3D Visualizations", type=bool, 
                         default=False)
 
