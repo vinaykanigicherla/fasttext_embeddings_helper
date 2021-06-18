@@ -12,6 +12,7 @@ Additionally, we can create either a 2D or 3D PCA visualization of the word vect
 1. Clone this repository 
 ```
 $ git clone https://github.com/vinaykanigicherla/fasttext_embeddings_helper.git
+$ cd fasttext_embeddings_helper
 ```
 2. Install FastText Python Module
 ```
